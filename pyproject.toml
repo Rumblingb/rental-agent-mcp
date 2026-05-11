@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rental-agent-mcp"
+version = "0.1.0"
+description = "AI-native rental intelligence platform. 8 tools. Zero API keys."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "httpx>=0.27.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Rumblingb/rental-agent-mcp"
+MCP-Docs = "https://rumblingb.github.io/rental-agent-mcp/"
+
+[project.scripts]
+rental-agent = "rental_agent.server:main"
+
+[tool.setuptools.packages.find]
+include = ["rental_agent*"]
