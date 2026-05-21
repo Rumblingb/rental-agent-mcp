@@ -5,11 +5,9 @@ name: rental-agent-mcp
 description: AI-native rental intelligence platform. 8 tools. Zero API keys.
 runtime: python
 entry: 'rental_agent.server:main'
-build:
-  install: pip install -r requirements.txt
 startCommand:
   type: stdio
-  command: python
+  command: python3
   args:
     - '-m'
     - rental_agent.server
