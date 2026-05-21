@@ -1,6 +1,8 @@
 {
   "$schema": "https://glama.ai/mcp/schemas/server.json",
-  "maintainers": [
-    "Rumblingb"
-  ]
+  "maintainers": ["Rumblingb"],
+  "description": "Rental market intelligence for AI agents — listings, comparables, trends. 8 tools.",
+  "categories": ["real-estate"],
+  "license": "MIT",
+  "homepage": "https://rumblingb.github.io/rental-agent-mcp/"
 }
