@@ -3,7 +3,7 @@
 
 import json, re, math, urllib.parse
 from datetime import datetime
-from mcp.server import Server, stdio_server
+from mcp.server.lowlevel import Server, stdio_server
 import httpx
 
 server = Server("rental-agent-mcp")
